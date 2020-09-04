@@ -25,29 +25,72 @@ function ibg(){
             rotate: 0,
             stretch: 700,
             depth: 150,
-            slideShadows : false
+            slideShadows : false,
         },
         breakpoints: {
-            320: {
-                slidesPerView: 1,
+            300: {
                 coverflowEffect: {
                     rotate: 0,
-                    stretch: 0,
-                    depth: 0,
-                    slideShadows : false
+                    stretch: 200,
+                    depth: 150,
+                    slideShadows : false,
                 },
             },
-            550: {
-                slidesPerView: 1,
-            },
-            1240: {
-                slidesPerView: 2,
+            400: {
                 coverflowEffect: {
                     rotate: 0,
-                    stretch: 700,
+                    stretch: 200,
+                    depth: 150,
+                    slideShadows : false,
+                },
+            },
+            500: {
+                coverflowEffect: {
+                    rotate: 0,
+                    stretch: 300,
+                    depth: 150,
+                    slideShadows : false,
+                },
+            },
+            600: {
+                coverflowEffect: {
+                    rotate: 0,
+                    stretch: 300,
+                    depth: 150,
+                    slideShadows : false,
+                },
+            },
+            700: {
+                coverflowEffect: {
+                    rotate: 0,
+                    stretch: 400,
+                    depth: 150,
+                    slideShadows : false,
+                },
+            },
+            800: {
+                coverflowEffect: {
+                    rotate: 0,
+                    stretch: 350,
+                    depth: 150,
+                    slideShadows : false,
+                },
+            },
+            1300: {
+                coverflowEffect: {
+                    rotate: 0,
+                    stretch: 300,
+                    depth: 150,
+                    slideShadows : false,
+                },
+            },
+            1500: {
+                coverflowEffect: {
+                    rotate: 0,
+                    stretch: 300,
                     depth: 150,
                     slideShadows : false
                 },
             }
-        },
+        }
     });
