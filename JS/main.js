@@ -10,88 +10,29 @@ function ibg(){
     }
     
     ibg();
-
-    const gratitudes = new Swiper('.gratitude_slider ', {
-        pagination: {
-          el: '.gratitude_pager',
-          clickable: true,
+    var mySwiper = new Swiper('.swiper-banner', {
+        speed: 400,
+        spaceBetween: 100,
+        loop: true,
+        autoplay: {
+            delay: 3000,
+          },
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true,
         },
-        effect: 'coverflow',
+    });
+    var mySwiper = new Swiper('.swiper-home', {
+        speed: 300,
+        resistanceRatio: 1,
+        spaceBetween: 30,
+        slidesPerView: 'auto',
         centeredSlides: true,
-        // loop: true,
-        initialSlide: 3,
-        slidesPerView: 3,
-        coverflowEffect: {
-            rotate: 0,
-            stretch: 700,
-            depth: 150,
-            slideShadows : false,
-        },
-        breakpoints: {
-            300: {
-                coverflowEffect: {
-                    rotate: 0,
-                    stretch: 200,
-                    depth: 150,
-                    slideShadows : false,
-                },
-            },
-            400: {
-                coverflowEffect: {
-                    rotate: 0,
-                    stretch: 200,
-                    depth: 150,
-                    slideShadows : false,
-                },
-            },
-            500: {
-                coverflowEffect: {
-                    rotate: 0,
-                    stretch: 300,
-                    depth: 150,
-                    slideShadows : false,
-                },
-            },
-            600: {
-                coverflowEffect: {
-                    rotate: 0,
-                    stretch: 300,
-                    depth: 150,
-                    slideShadows : false,
-                },
-            },
-            700: {
-                coverflowEffect: {
-                    rotate: 0,
-                    stretch: 400,
-                    depth: 150,
-                    slideShadows : false,
-                },
-            },
-            800: {
-                coverflowEffect: {
-                    rotate: 0,
-                    stretch: 350,
-                    depth: 150,
-                    slideShadows : false,
-                },
-            },
-            1300: {
-                coverflowEffect: {
-                    rotate: 0,
-                    stretch: 300,
-                    depth: 150,
-                    slideShadows : false,
-                },
-            },
-            1500: {
-                coverflowEffect: {
-                    rotate: 0,
-                    stretch: 300,
-                    depth: 150,
-                    slideShadows : false
-                },
-            }
-        }
+        pagination: {
+            el: '.home-pagination',
+            dynamicBullets: true,
+            dynamicMainBullets: 5,
+            clickable: true,
+          },
     });
     $("a#gallery").fancybox();
